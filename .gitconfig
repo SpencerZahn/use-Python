@@ -1,0 +1,10 @@
+[http]
+	sslVerify = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = SpencerZahn
+	email = 34488812+SpencerZahn@users.noreply.github.com
